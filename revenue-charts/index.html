@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Charts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Revenue Charts</h2>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#revenue">Revenue</a>
+        <a href="#sources">Sources</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="heading">
+        <div>
+            <h1>Revenue Dashboard</h1>
+            <p>Track revenue performance and income sources.</p>
+        </div>
+
+        <select id="period">
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="yearly">Yearly</option>
+        </select>
+    </section>
+
+
+    <!-- Revenue Overview -->
+
+    <section id="overview" class="cards">
+
+        <div class="card">
+            <h3>Total Revenue</h3>
+            <h2 id="totalRevenue">₹2,45,000</h2>
+            <p>+14.5%</p>
+        </div>
+
+        <div class="card">
+            <h3>Average Revenue</h3>
+            <h2 id="averageRevenue">₹40,833</h2>
+            <p>Per month</p>
+        </div>
+
+        <div class="card">
+            <h3>Highest Revenue</h3>
+            <h2 id="highestRevenue">₹52,000</h2>
+            <p>Best month</p>
+        </div>
+
+        <div class="card">
+            <h3>Growth</h3>
+            <h2 id="growth">18.2%</h2>
+            <p>This period</p>
+        </div>
+
+    </section>
+
+
+    <!-- Revenue Chart -->
+
+    <section id="revenue" class="box">
+
+        <div class="section-title">
+            <div>
+                <h2>Revenue Chart</h2>
+                <p>Revenue generated over time</p>
+            </div>
+        </div>
+
+        <div id="chart" class="chart"></div>
+
+    </section>
+
+
+    <!-- Revenue Sources -->
+
+    <section id="sources" class="box">
+
+    <h2>Revenue Sources</h2>
+    <p>Revenue generated from different sources.</p>
+
+    <div class="source">
+        <span>Online Sales</span>
+        <strong id="onlineSales">₹1,20,000</strong>
+    </div>
+
+    <div class="source">
+        <span>Subscriptions</span>
+        <strong id="subscriptions">₹75,000</strong>
+    </div>
+
+    <div class="source">
+        <span>Services</span>
+        <strong id="services">₹50,000</strong>
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Revenue Charts Dashboard</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

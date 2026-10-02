@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Real-time Analytics</h2>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#live">Live Activity</a>
+        <a href="#traffic">Traffic</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="heading">
+        <div>
+            <h1>Real-time Analytics Dashboard</h1>
+            <p>Monitor live users and activity in real time.</p>
+        </div>
+
+        <div class="status">
+            <span></span> Live
+        </div>
+    </section>
+
+
+    <!-- Live Overview -->
+
+    <section id="overview" class="cards">
+
+        <div class="card">
+            <h3>Users Online</h3>
+            <h2 id="onlineUsers">1,248</h2>
+            <p>Currently online</p>
+        </div>
+
+        <div class="card">
+            <h3>Active Sessions</h3>
+            <h2 id="sessions">856</h2>
+            <p>Live sessions</p>
+        </div>
+
+        <div class="card">
+            <h3>Page Views</h3>
+            <h2 id="pageViews">4,562</h2>
+            <p>Today</p>
+        </div>
+
+        <div class="card">
+            <h3>Events</h3>
+            <h2 id="events">2,340</h2>
+            <p>Live events</p>
+        </div>
+
+    </section>
+
+
+    <!-- Live Activity -->
+
+    <section id="live" class="box">
+
+        <div class="section-title">
+            <div>
+                <h2>Live User Activity</h2>
+                <p>Latest activities from users</p>
+            </div>
+
+            <button id="refresh">Refresh</button>
+        </div>
+
+        <div id="activityList">
+
+            <div class="activity">
+                🟢 <span>User opened Home page</span>
+                <small>Just now</small>
+            </div>
+
+            <div class="activity">
+                🟢 <span>User viewed Products</span>
+                <small>10 sec ago</small>
+            </div>
+
+            <div class="activity">
+                🟢 <span>User completed registration</span>
+                <small>20 sec ago</small>
+            </div>
+
+            <div class="activity">
+                🟢 <span>User started a session</span>
+                <small>35 sec ago</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Traffic -->
+
+    <section id="traffic" class="box">
+
+        <h2>Live Traffic</h2>
+        <p>Current users on different pages</p>
+
+        <div class="traffic-row">
+            <span>Home</span>
+            <strong id="homeUsers">420 users</strong>
+        </div>
+
+        <div class="traffic-row">
+            <span>Products</span>
+            <strong id="productUsers">315 users</strong>
+        </div>
+
+        <div class="traffic-row">
+            <span>About</span>
+            <strong id="aboutUsers">185 users</strong>
+        </div>
+
+        <div class="traffic-row">
+            <span>Contact</span>
+            <strong id="contactUsers">96 users</strong>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Real-time Analytics Dashboard</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

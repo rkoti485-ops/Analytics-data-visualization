@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics Reports & Export</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="dashboard">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="header-left">
+
+                <div class="logo">
+                    ✦
+                </div>
+
+                <div>
+                    <span class="small-label">
+                        ANALYTICS CENTER
+                    </span>
+
+                    <h1>
+                        Reports & Export
+                    </h1>
+
+                    <p>
+                        Generate, preview and export your analytics reports.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="header-status">
+                <span class="status-dot"></span>
+                Reports Ready
+            </div>
+
+        </header>
+
+
+        <!-- Report Generator -->
+        <section class="generator-card">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="small-label">
+                        REPORT GENERATOR
+                    </span>
+
+                    <h2>
+                        Create a Report
+                    </h2>
+
+                    <p>
+                        Select the report details and generate your analytics summary.
+                    </p>
+
+                </div>
+
+                <div class="report-icon">
+                    ▤
+                </div>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <!-- Report Type -->
+                <div class="form-group">
+
+                    <label for="reportType">
+                        Report Type
+                    </label>
+
+                    <select id="reportType">
+
+                        <option value="business">
+                            Business Overview
+                        </option>
+
+                        <option value="sales">
+                            Sales Analytics
+                        </option>
+
+                        <option value="marketing">
+                            Marketing Analytics
+                        </option>
+
+                        <option value="financial">
+                            Financial Analytics
+                        </option>
+
+                        <option value="customer">
+                            Customer Analytics
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Date Range -->
+                <div class="form-group">
+
+                    <label for="reportPeriod">
+                        Time Period
+                    </label>
+
+                    <select id="reportPeriod">
+
+                        <option value="7">
+                            Last 7 Days
+                        </option>
+
+                        <option value="30">
+                            Last 30 Days
+                        </option>
+
+                        <option value="90">
+                            Last 90 Days
+                        </option>
+
+                        <option value="365">
+                            Last Year
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Format -->
+                <div class="form-group">
+
+                    <label for="exportFormat">
+                        Export Format
+                    </label>
+
+                    <select id="exportFormat">
+
+                        <option value="csv">
+                            CSV
+                        </option>
+
+                        <option value="json">
+                            JSON
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Generate -->
+                <button
+                    id="generateReport"
+                    class="generate-btn">
+
+                    <span>
+                        Generate Report
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Report Preview -->
+        <section class="preview-card">
+
+            <div class="preview-header">
+
+                <div>
+
+                    <span class="small-label">
+                        REPORT PREVIEW
+                    </span>
+
+                    <h2 id="reportTitle">
+                        Business Overview
+                    </h2>
+
+                </div>
+
+                <span class="preview-badge">
+                    Preview
+                </span>
+
+            </div>
+
+
+            <!-- Summary Cards -->
+            <div class="summary-grid">
+
+                <div class="summary-card">
+
+                    <span>
+                        Revenue
+                    </span>
+
+                    <h3>
+                        ₹8,52,400
+                    </h3>
+
+                    <small class="positive">
+                        ↑ 18.5%
+                    </small>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <span>
+                        Users
+                    </span>
+
+                    <h3>
+                        25,430
+                    </h3>
+
+                    <small class="positive">
+                        ↑ 12.4%
+                    </small>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <span>
+                        Orders
+                    </span>
+
+                    <h3>
+                        3,245
+                    </h3>
+
+                    <small class="positive">
+                        ↑ 9.8%
+                    </small>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <span>
+                        Conversion
+                    </span>
+
+                    <h3>
+                        7.8%
+                    </h3>
+
+                    <small class="positive">
+                        ↑ 2.1%
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Report Table -->
+            <div class="table-wrapper">
+
+                <div class="table-heading">
+
+                    <h3>
+                        Report Data
+                    </h3>
+
+                    <span id="reportInfo">
+                        Business Overview • Last 7 Days
+                    </span>
+
+                </div>
+
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Metric</th>
+                            <th>Current</th>
+                            <th>Previous</th>
+                            <th>Growth</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Revenue</td>
+                            <td>₹8,52,400</td>
+                            <td>₹7,18,500</td>
+                            <td class="positive">+18.5%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Users</td>
+                            <td>25,430</td>
+                            <td>22,620</td>
+                            <td class="positive">+12.4%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Orders</td>
+                            <td>3,245</td>
+                            <td>2,955</td>
+                            <td class="positive">+9.8%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Conversion</td>
+                            <td>7.8%</td>
+                            <td>5.7%</td>
+                            <td class="positive">+2.1%</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- Export Actions -->
+            <div class="export-area">
+
+                <div>
+
+                    <h3>
+                        Export Report
+                    </h3>
+
+                    <p>
+                        Download the generated analytics data.
+                    </p>
+
+                </div>
+
+                <div class="export-buttons">
+
+                    <button
+                        id="exportCsv"
+                        class="export-btn">
+
+                        ↓ Export CSV
+
+                    </button>
+
+                    <button
+                        id="exportJson"
+                        class="export-btn secondary">
+
+                        { } Export JSON
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notification -->
+            <div
+                id="notification"
+                class="notification">
+
+                Report generated successfully.
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <span>
+                Analytics & Data Visualization
+            </span>
+
+            <span>
+                Built with HTML • CSS • JavaScript
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

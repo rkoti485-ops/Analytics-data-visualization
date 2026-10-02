@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Revenue Analytics</h1>
+        <p>Track revenue and business growth</p>
+    </header>
+
+    <main>
+
+        <div class="filter">
+            <label for="period">Select Period:</label>
+
+            <select id="period">
+                <option value="month">Monthly</option>
+                <option value="quarter">Quarterly</option>
+                <option value="year">Yearly</option>
+            </select>
+        </div>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <h2 id="totalRevenue">₹8,52,400</h2>
+                <p id="growthText">+18.5%</p>
+            </div>
+
+            <div class="card">
+                <h3>Monthly Revenue</h3>
+                <h2 id="monthlyRevenue">₹2,45,600</h2>
+                <p>Current Period</p>
+            </div>
+
+            <div class="card">
+                <h3>Average Revenue</h3>
+                <h2 id="averageRevenue">₹85,240</h2>
+                <p>Average</p>
+            </div>
+
+            <div class="card">
+                <h3>Growth</h3>
+                <h2 id="growth">18.5%</h2>
+                <p>Current Period</p>
+            </div>
+
+        </section>
+
+        <section class="chart-section">
+
+            <h2>Revenue Overview</h2>
+
+            <div class="chart">
+
+                <div class="bar">
+                    <div class="bar-fill" id="bar1"></div>
+                    <span id="label1">Jan</span>
+                </div>
+
+                <div class="bar">
+                    <div class="bar-fill" id="bar2"></div>
+                    <span id="label2">Feb</span>
+                </div>
+
+                <div class="bar">
+                    <div class="bar-fill" id="bar3"></div>
+                    <span id="label3">Mar</span>
+                </div>
+
+                <div class="bar">
+                    <div class="bar-fill" id="bar4"></div>
+                    <span id="label4">Apr</span>
+                </div>
+
+                <div class="bar">
+                    <div class="bar-fill" id="bar5"></div>
+                    <span id="label5">May</span>
+                </div>
+
+                <div class="bar">
+                    <div class="bar-fill" id="bar6"></div>
+                    <span id="label6">Jun</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="details">
+
+            <div class="detail-box">
+
+                <h2>Revenue by Category</h2>
+
+                <p>
+                    Electronics
+                    <span id="electronics">35%</span>
+                </p>
+
+                <p>
+                    Clothing
+                    <span id="clothing">25%</span>
+                </p>
+
+                <p>
+                    Food
+                    <span id="food">20%</span>
+                </p>
+
+                <p>
+                    Others
+                    <span id="others">20%</span>
+                </p>
+
+            </div>
+
+            <div class="detail-box">
+
+                <h2>Revenue by Region</h2>
+
+                <p>
+                    South India
+                    <span id="south">40%</span>
+                </p>
+
+                <p>
+                    North India
+                    <span id="north">25%</span>
+                </p>
+
+                <p>
+                    West India
+                    <span id="west">20%</span>
+                </p>
+
+                <p>
+                    East India
+                    <span id="east">15%</span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Revenue Analytics Dashboard</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

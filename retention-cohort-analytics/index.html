@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retention & Cohort Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Retention & Cohort Analytics</h1>
+        <p>Track customer retention and cohort performance</p>
+    </header>
+
+    <main>
+
+        <div class="filter">
+            <label for="period">Select Period:</label>
+
+            <select id="period">
+                <option value="month">Monthly</option>
+                <option value="quarter">Quarterly</option>
+                <option value="year">Yearly</option>
+            </select>
+        </div>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Retention Rate</h3>
+                <h2 id="retention">72%</h2>
+                <p>Current Period</p>
+            </div>
+
+            <div class="card">
+                <h3>Active Users</h3>
+                <h2 id="activeUsers">7,200</h2>
+                <p>Active Customers</p>
+            </div>
+
+            <div class="card">
+                <h3>Churn Rate</h3>
+                <h2 id="churn">28%</h2>
+                <p>Customers Lost</p>
+            </div>
+
+            <div class="card">
+                <h3>Returning Users</h3>
+                <h2 id="returning">5,400</h2>
+                <p>Repeat Customers</p>
+            </div>
+
+        </section>
+
+        <section class="cohort-section">
+
+            <h2>Cohort Retention</h2>
+
+            <div class="cohort-table">
+
+                <div class="row heading">
+                    <span>Cohort</span>
+                    <span>Month 1</span>
+                    <span>Month 2</span>
+                    <span>Month 3</span>
+                    <span>Month 4</span>
+                </div>
+
+                <div class="row">
+                    <span>January</span>
+                    <span id="jan1">100%</span>
+                    <span id="jan2">78%</span>
+                    <span id="jan3">65%</span>
+                    <span id="jan4">55%</span>
+                </div>
+
+                <div class="row">
+                    <span>February</span>
+                    <span id="feb1">100%</span>
+                    <span id="feb2">82%</span>
+                    <span id="feb3">68%</span>
+                    <span id="feb4">58%</span>
+                </div>
+
+                <div class="row">
+                    <span>March</span>
+                    <span id="mar1">100%</span>
+                    <span id="mar2">85%</span>
+                    <span id="mar3">72%</span>
+                    <span id="mar4">60%</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="details">
+
+            <div class="detail-box">
+
+                <h2>Retention Analysis</h2>
+
+                <p>
+                    New Users
+                    <span id="newUsers">2,800</span>
+                </p>
+
+                <p>
+                    Returning Users
+                    <span id="returnUsers">5,400</span>
+                </p>
+
+                <p>
+                    Retention Rate
+                    <span id="retentionRate">72%</span>
+                </p>
+
+            </div>
+
+            <div class="detail-box">
+
+                <h2>Churn Analysis</h2>
+
+                <p>
+                    Churned Users
+                    <span id="churnUsers">2,800</span>
+                </p>
+
+                <p>
+                    Churn Rate
+                    <span id="churnRate">28%</span>
+                </p>
+
+                <p>
+                    Retained Users
+                    <span id="retainedUsers">7,200</span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Retention & Cohort Analytics Dashboard</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

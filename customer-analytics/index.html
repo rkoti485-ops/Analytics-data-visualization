@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Customer Analytics</h1>
+            <p>Understand your customers and their activity</p>
+        </div>
+
+        <button id="refresh">Refresh Data</button>
+    </header>
+
+    <section class="cards">
+
+        <div class="card">
+            <span>Total Customers</span>
+            <h2>25,430</h2>
+            <p>↑ 12% this month</p>
+        </div>
+
+        <div class="card">
+            <span>New Customers</span>
+            <h2>1,240</h2>
+            <p>↑ 8% this month</p>
+        </div>
+
+        <div class="card">
+            <span>Active Customers</span>
+            <h2>18,200</h2>
+            <p>↑ 15% this month</p>
+        </div>
+
+        <div class="card">
+            <span>Returning Customers</span>
+            <h2>8,540</h2>
+            <p>↑ 6% this month</p>
+        </div>
+
+    </section>
+
+    <section class="grid">
+
+        <div class="panel">
+            <h2>Customer Growth</h2>
+
+            <div class="chart">
+                <div style="height: 40%">Jan</div>
+                <div style="height: 55%">Feb</div>
+                <div style="height: 65%">Mar</div>
+                <div style="height: 75%">Apr</div>
+                <div style="height: 90%">May</div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>Customer Type</h2>
+
+            <div class="customer-type">
+                <p>New Customers <strong>35%</strong></p>
+                <div><i style="width:35%"></i></div>
+
+                <p>Returning Customers <strong>65%</strong></p>
+                <div><i style="width:65%"></i></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="panel table-panel">
+
+        <h2>Top Customers</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Orders</th>
+                    <th>Spent</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Rahul</td>
+                    <td>24</td>
+                    <td>₹45,200</td>
+                    <td>Active</td>
+                </tr>
+
+                <tr>
+                    <td>Priya</td>
+                    <td>19</td>
+                    <td>₹38,500</td>
+                    <td>Active</td>
+                </tr>
+
+                <tr>
+                    <td>Arjun</td>
+                    <td>15</td>
+                    <td>₹29,800</td>
+                    <td>Active</td>
+                </tr>
+
+                <tr>
+                    <td>Ananya</td>
+                    <td>11</td>
+                    <td>₹21,400</td>
+                    <td>Inactive</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

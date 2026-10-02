@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Data Visualization</h2>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#performance">Performance</a>
+        <a href="#metrics">Metrics</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="heading">
+        <div>
+            <h1>Data Visualization Cards</h1>
+            <p>View important data and performance metrics.</p>
+        </div>
+
+        <button id="update">Update Data</button>
+    </section>
+
+
+    <!-- Overview Cards -->
+
+    <section id="overview" class="cards">
+
+        <div class="card">
+            <div class="card-title">
+                <h3>Total Sales</h3>
+                <span>💰</span>
+            </div>
+
+            <h2 id="sales">₹1,25,000</h2>
+            <p class="positive">↑ 12.5%</p>
+        </div>
+
+
+        <div class="card">
+            <div class="card-title">
+                <h3>Total Orders</h3>
+                <span>🛒</span>
+            </div>
+
+            <h2 id="orders">2,450</h2>
+            <p class="positive">↑ 8.2%</p>
+        </div>
+
+
+        <div class="card">
+            <div class="card-title">
+                <h3>Customers</h3>
+                <span>👥</span>
+            </div>
+
+            <h2 id="customers">8,540</h2>
+            <p class="positive">↑ 15.4%</p>
+        </div>
+
+
+        <div class="card">
+            <div class="card-title">
+                <h3>Conversion Rate</h3>
+                <span>📈</span>
+            </div>
+
+            <h2 id="conversion">6.8%</h2>
+            <p class="positive">↑ 2.1%</p>
+        </div>
+
+    </section>
+
+
+    <!-- Performance -->
+
+    <section id="performance" class="box">
+
+        <h2>Performance Overview</h2>
+        <p>Visual representation of key performance data.</p>
+
+        <div class="performance">
+
+            <div class="circle">
+                <span id="score">78%</span>
+            </div>
+
+           <div class="details">
+
+    <div>
+        <span>Sales Target</span>
+        <strong id="salesTarget">82%</strong>
+    </div>
+
+    <div>
+        <span>Customer Growth</span>
+        <strong id="customerGrowth">68%</strong>
+    </div>
+
+    <div>
+        <span>Order Completion</span>
+        <strong id="orderCompletion">91%</strong>
+    </div>
+
+</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Metrics -->
+
+    <section id="metrics" class="box">
+
+    <h2>Key Metrics</h2>
+    <p>Important business performance indicators.</p>
+
+    <div class="metrics">
+
+        <div>
+            <span>Average Order Value</span>
+            <strong id="orderValue">₹1,250</strong>
+        </div>
+
+        <div>
+            <span>Customer Retention</span>
+            <strong id="retention">74%</strong>
+        </div>
+
+        <div>
+            <span>Monthly Growth</span>
+            <strong id="monthlyGrowth">18.6%</strong>
+        </div>
+
+        <div>
+            <span>Customer Satisfaction</span>
+            <strong id="satisfaction">92%</strong>
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+
+<footer>
+    <p>© 2026 Data Visualization Dashboard</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

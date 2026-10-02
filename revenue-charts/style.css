@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+
+/* Header */
+
+header {
+    background: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h2 {
+    color: #2563eb;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* Main */
+
+main {
+    width: 86%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.heading h1 {
+    margin-bottom: 5px;
+}
+
+.heading p,
+.box p {
+    color: #777;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+}
+
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.card,
+.box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.card h3 {
+    color: #666;
+    font-size: 15px;
+}
+
+.card h2 {
+    margin: 12px 0 5px;
+}
+
+.card p {
+    color: green;
+}
+
+
+/* Sections */
+
+.box {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+
+/* Chart */
+
+.chart {
+    height: 300px;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    border-bottom: 2px solid #aaa;
+    padding: 20px;
+}
+
+.bar {
+    width: 40px;
+    background: #2563eb;
+    border-radius: 5px 5px 0 0;
+    transition: height 0.4s;
+}
+
+.bar:hover {
+    background: #1d4ed8;
+}
+
+
+/* Revenue Sources */
+
+.source {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.source strong {
+    color: #2563eb;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    color: #777;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header,
+    .heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .bar {
+        width: 25px;
+    }
+}

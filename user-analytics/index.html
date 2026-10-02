@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>User Analytics</h2>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#growth">Growth</a>
+        <a href="#activity">Activity</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="heading">
+        <div>
+            <h1>User Analytics Dashboard</h1>
+            <p>Track user activity, growth and engagement.</p>
+        </div>
+
+        <select id="period">
+            <option value="7">Last 7 Days</option>
+            <option value="30">Last 30 Days</option>
+            <option value="90">Last 90 Days</option>
+        </select>
+    </section>
+
+
+    <!-- User Overview -->
+
+    <section id="overview" class="cards">
+
+        <div class="card">
+            <h3>Total Users</h3>
+            <h2 id="total">25,430</h2>
+            <p>+12.5%</p>
+        </div>
+
+        <div class="card">
+            <h3>Active Users</h3>
+            <h2 id="active">18,250</h2>
+            <p>+8.4%</p>
+        </div>
+
+        <div class="card">
+            <h3>New Users</h3>
+            <h2 id="newUsers">1,240</h2>
+            <p>+15.2%</p>
+        </div>
+
+        <div class="card">
+            <h3>Returning Users</h3>
+            <h2 id="returning">8,540</h2>
+            <p>+6.8%</p>
+        </div>
+
+    </section>
+
+
+    <!-- User Growth -->
+
+    <section id="growth" class="box">
+
+        <div class="section-title">
+            <div>
+                <h2>User Growth</h2>
+                <p>User growth over time</p>
+            </div>
+
+            <div>
+                <button class="chart-btn active" data-chart="weekly">
+                    Weekly
+                </button>
+
+                <button class="chart-btn" data-chart="monthly">
+                    Monthly
+                </button>
+
+                <button class="chart-btn" data-chart="yearly">
+                    Yearly
+                </button>
+            </div>
+        </div>
+
+        <div id="chart" class="chart"></div>
+
+    </section>
+
+
+    <!-- User Distribution -->
+
+    <section class="box">
+
+    <h2>User Distribution</h2>
+    <p>Different types of users</p>
+
+    <div class="progress">
+        <span>Active Users <b id="activePercent">72%</b></span>
+        <div><i id="activeBar" style="width:72%"></i></div>
+    </div>
+
+    <div class="progress">
+        <span>New Users <b id="newPercent">18%</b></span>
+        <div><i id="newBar" style="width:18%"></i></div>
+    </div>
+
+    <div class="progress">
+        <span>Returning Users <b id="returningPercent">10%</b></span>
+        <div><i id="returningBar" style="width:10%"></i></div>
+    </div>
+
+</section>
+
+    <!-- Recent Activity -->
+
+    <section id="activity" class="box">
+
+        <div class="section-title">
+            <div>
+                <h2>Recent User Activity</h2>
+                <p>Latest user actions</p>
+            </div>
+
+            <button id="refresh">Refresh Activity</button>
+        </div>
+
+        <div id="activities">
+
+            <div class="activity">
+                👤 <span>New user registered</span>
+                <small>2 minutes ago</small>
+            </div>
+
+            <div class="activity">
+                🔐 <span>User logged in</span>
+                <small>7 minutes ago</small>
+            </div>
+
+            <div class="activity">
+                ⭐ <span>User completed profile</span>
+                <small>12 minutes ago</small>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 User Analytics Dashboard</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

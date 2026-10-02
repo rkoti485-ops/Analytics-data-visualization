@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span>📊</span>
+                <h2>Analytics</h2>
+            </div>
+
+            <nav>
+                <a href="#" class="active">📈 Dashboard</a>
+                <a href="#">👥 Customers</a>
+                <a href="#">📦 Products</a>
+                <a href="#">💰 Revenue</a>
+                <a href="#">📋 Reports</a>
+                <a href="#">⚙️ Settings</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <p>Analytics UI Collection</p>
+                <small>Team Project</small>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="topbar">
+                <div>
+                    <h1>Analytics Dashboard</h1>
+                    <p>Monitor your business performance</p>
+                </div>
+
+                <div class="header-actions">
+                    <select id="dateFilter">
+                        <option value="7">Last 7 Days</option>
+                        <option value="30">Last 30 Days</option>
+                        <option value="90">Last 90 Days</option>
+                    </select>
+
+                    <button class="notification">🔔</button>
+
+                    <div class="profile">
+                        <div class="avatar">K</div>
+                        <span>Koti</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- KPI Cards -->
+            <section class="kpi-grid">
+
+                <div class="kpi-card">
+                    <div class="card-top">
+                        <span>Total Revenue</span>
+                        <span class="icon green">₹</span>
+                    </div>
+                    <h2 id="revenue">₹4,52,000</h2>
+                    <p class="positive">↑ 12.5% <span>vs previous period</span></p>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="card-top">
+                        <span>Total Users</span>
+                        <span class="icon blue">👥</span>
+                    </div>
+                    <h2 id="users">25,430</h2>
+                    <p class="positive">↑ 8.2% <span>vs previous period</span></p>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="card-top">
+                        <span>Total Orders</span>
+                        <span class="icon purple">🛒</span>
+                    </div>
+                    <h2 id="orders">3,245</h2>
+                    <p class="positive">↑ 15.4% <span>vs previous period</span></p>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="card-top">
+                        <span>Conversion Rate</span>
+                        <span class="icon orange">%</span>
+                    </div>
+                    <h2 id="conversion">7.8%</h2>
+                    <p class="positive">↑ 2.1% <span>vs previous period</span></p>
+                </div>
+
+            </section>
+
+            <!-- Charts -->
+            <section class="charts-grid">
+
+                <div class="chart-card revenue-chart">
+                    <div class="chart-header">
+                        <div>
+                            <h3>Revenue Overview</h3>
+                            <p>Revenue performance over time</p>
+                        </div>
+
+                        <button id="changeChart">Change Data</button>
+                    </div>
+
+                    <div class="chart">
+                        <div class="y-axis">
+                            <span>₹50K</span>
+                            <span>₹40K</span>
+                            <span>₹30K</span>
+                            <span>₹20K</span>
+                            <span>₹10K</span>
+                            <span>₹0</span>
+                        </div>
+
+                        <div class="chart-area">
+                            <div class="grid-lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="bars" id="bars">
+                                <div class="bar" style="height: 45%"></div>
+                                <div class="bar" style="height: 62%"></div>
+                                <div class="bar" style="height: 50%"></div>
+                                <div class="bar" style="height: 78%"></div>
+                                <div class="bar" style="height: 65%"></div>
+                                <div class="bar" style="height: 88%"></div>
+                                <div class="bar" style="height: 72%"></div>
+                            </div>
+
+                            <div class="x-axis">
+                                <span>Mon</span>
+                                <span>Tue</span>
+                                <span>Wed</span>
+                                <span>Thu</span>
+                                <span>Fri</span>
+                                <span>Sat</span>
+                                <span>Sun</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Traffic -->
+                <div class="chart-card traffic-card">
+                    <div class="chart-header">
+                        <div>
+                            <h3>Traffic Sources</h3>
+                            <p>Where users come from</p>
+                        </div>
+                    </div>
+
+                    <div class="traffic-content">
+
+                        <div class="donut">
+                            <div class="donut-center">
+                                <strong>25.4K</strong>
+                                <small>Visitors</small>
+                            </div>
+                        </div>
+
+                        <div class="legend">
+                            <div>
+                                <span class="dot blue-dot"></span>
+                                <p>Organic Search</p>
+                                <strong>45%</strong>
+                            </div>
+
+                            <div>
+                                <span class="dot purple-dot"></span>
+                                <p>Social Media</p>
+                                <strong>25%</strong>
+                            </div>
+
+                            <div>
+                                <span class="dot green-dot"></span>
+                                <p>Direct</p>
+                                <strong>20%</strong>
+                            </div>
+
+                            <div>
+                                <span class="dot orange-dot"></span>
+                                <p>Referral</p>
+                                <strong>10%</strong>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Bottom Section -->
+            <section class="bottom-grid">
+
+                <!-- Customer Growth -->
+                <div class="info-card">
+                    <div class="section-header">
+                        <div>
+                            <h3>Customer Growth</h3>
+                            <p>New customers this month</p>
+                        </div>
+                        <span class="growth">+18.4%</span>
+                    </div>
+
+                    <div class="customer-stats">
+                        <div>
+                            <strong>1,240</strong>
+                            <span>New Customers</span>
+                        </div>
+
+                        <div>
+                            <strong>8,540</strong>
+                            <span>Returning</span>
+                        </div>
+
+                        <div>
+                            <strong>18,200</strong>
+                            <span>Active Users</span>
+                        </div>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <span></span>
+                        </div>
+                        <div class="progress-labels">
+                            <span>Target: 1,500</span>
+                            <span>82.6%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="info-card">
+                    <div class="section-header">
+                        <div>
+                            <h3>Recent Activity</h3>
+                            <p>Latest dashboard events</p>
+                        </div>
+                        <button id="viewAll">View All</button>
+                    </div>
+
+                    <div class="activity-list">
+
+                        <div class="activity">
+                            <span class="activity-icon green-bg">✓</span>
+                            <div>
+                                <strong>New order received</strong>
+                                <p>Order #ORD-1025</p>
+                            </div>
+                            <small>2 min ago</small>
+                        </div>
+
+                        <div class="activity">
+                            <span class="activity-icon blue-bg">👤</span>
+                            <div>
+                                <strong>New customer registered</strong>
+                                <p>Rahul Kumar</p>
+                            </div>
+                            <small>15 min ago</small>
+                        </div>
+
+                        <div class="activity">
+                            <span class="activity-icon purple-bg">₹</span>
+                            <div>
+                                <strong>Payment received</strong>
+                                <p>₹12,500 successfully</p>
+                            </div>
+                            <small>32 min ago</small>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

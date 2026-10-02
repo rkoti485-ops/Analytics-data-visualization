@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Product Analytics</h1>
+            <p>Track product performance and sales</p>
+        </div>
+
+        <select id="category">
+            <option>All Categories</option>
+            <option>Electronics</option>
+            <option>Clothing</option>
+            <option>Accessories</option>
+        </select>
+    </header>
+
+    <section class="cards">
+
+        <div class="card">
+            <span>Total Products</span>
+            <h2>1,250</h2>
+            <p>+45 this month</p>
+        </div>
+
+        <div class="card">
+            <span>Total Views</span>
+            <h2>85,420</h2>
+            <p>↑ 18%</p>
+        </div>
+
+        <div class="card">
+            <span>Total Sales</span>
+            <h2>₹8,45,000</h2>
+            <p>↑ 14%</p>
+        </div>
+
+        <div class="card">
+            <span>Best Category</span>
+            <h2>Electronics</h2>
+            <p>38% of sales</p>
+        </div>
+
+    </section>
+
+    <section class="content">
+
+        <div class="panel">
+            <h2>Product Performance</h2>
+
+            <div class="product">
+                <div class="top">
+                    <span>Wireless Headphones</span>
+                    <strong>92%</strong>
+                </div>
+                <div class="progress">
+                    <i style="width:92%"></i>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="top">
+                    <span>Smart Watch</span>
+                    <strong>78%</strong>
+                </div>
+                <div class="progress">
+                    <i style="width:78%"></i>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="top">
+                    <span>Bluetooth Speaker</span>
+                    <strong>65%</strong>
+                </div>
+                <div class="progress">
+                    <i style="width:65%"></i>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="top">
+                    <span>Power Bank</span>
+                    <strong>55%</strong>
+                </div>
+                <div class="progress">
+                    <i style="width:55%"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="panel">
+            <h2>Top Product</h2>
+
+            <div class="product-box">
+                <div class="icon">🎧</div>
+                <h2>Wireless Headphones</h2>
+                <p>12,450 sales</p>
+                <h3>₹24,90,000</h3>
+            </div>
+
+            <button id="details">View Product Details</button>
+        </div>
+
+    </section>
+
+    <section class="panel">
+
+        <h2>Product Sales</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Sales</th>
+                    <th>Revenue</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Wireless Headphones</td>
+                    <td>Electronics</td>
+                    <td>12,450</td>
+                    <td>₹24,90,000</td>
+                </tr>
+
+                <tr>
+                    <td>Smart Watch</td>
+                    <td>Electronics</td>
+                    <td>8,240</td>
+                    <td>₹16,48,000</td>
+                </tr>
+
+                <tr>
+                    <td>Bluetooth Speaker</td>
+                    <td>Accessories</td>
+                    <td>6,850</td>
+                    <td>₹10,27,500</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

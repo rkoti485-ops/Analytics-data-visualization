@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Funnel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Conversion Funnel</h1>
+        <p>Track users from visit to purchase</p>
+    </header>
+
+    <main>
+
+        <div class="filter">
+            <label for="period">Select Period:</label>
+
+            <select id="period">
+                <option value="month">Monthly</option>
+                <option value="quarter">Quarterly</option>
+                <option value="year">Yearly</option>
+            </select>
+        </div>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Visitors</h3>
+                <h2 id="visitors">10,000</h2>
+                <p>Website Visitors</p>
+            </div>
+
+            <div class="card">
+                <h3>Sign Ups</h3>
+                <h2 id="signups">4,500</h2>
+                <p id="signupRate">45% Conversion</p>
+            </div>
+
+            <div class="card">
+                <h3>Purchases</h3>
+                <h2 id="purchases">1,800</h2>
+                <p id="purchaseRate">40% Conversion</p>
+            </div>
+
+            <div class="card">
+                <h3>Overall Conversion</h3>
+                <h2 id="overall">18%</h2>
+                <p>Visitor to Purchase</p>
+            </div>
+
+        </section>
+
+        <section class="funnel-section">
+
+            <h2>Conversion Funnel</h2>
+
+            <div class="funnel">
+
+                <div class="funnel-step step1">
+                    <span>Visitors</span>
+                    <strong id="funnelVisitors">10,000</strong>
+                </div>
+
+                <div class="funnel-step step2">
+                    <span>Sign Ups</span>
+                    <strong id="funnelSignups">4,500</strong>
+                </div>
+
+                <div class="funnel-step step3">
+                    <span>Purchases</span>
+                    <strong id="funnelPurchases">1,800</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="details">
+
+            <div class="detail-box">
+
+                <h2>Funnel Performance</h2>
+
+                <p>
+                    Visitor to Sign Up
+                    <span id="visitorSignup">45%</span>
+                </p>
+
+                <p>
+                    Sign Up to Purchase
+                    <span id="signupPurchase">40%</span>
+                </p>
+
+                <p>
+                    Visitor to Purchase
+                    <span id="visitorPurchase">18%</span>
+                </p>
+
+            </div>
+
+            <div class="detail-box">
+
+                <h2>Drop-off Analysis</h2>
+
+                <p>
+                    Visitors Lost
+                    <span id="visitorDrop">55%</span>
+                </p>
+
+                <p>
+                    Sign Ups Lost
+                    <span id="signupDrop">60%</span>
+                </p>
+
+                <p>
+                    Total Drop-off
+                    <span id="totalDrop">82%</span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Conversion Funnel Dashboard</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

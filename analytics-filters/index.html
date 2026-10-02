@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics Filters</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Decoration -->
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+    <!-- Main Container -->
+    <main class="dashboard">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="header-left">
+
+                <div class="logo">
+                    <span>✦</span>
+                </div>
+
+                <div>
+                    <h1>Analytics Filters</h1>
+                    <p>Explore and filter your business insights</p>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Live Data
+                </div>
+
+                <button class="profile-btn">
+                    G
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- Filter Panel -->
+        <section class="filter-card">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="small-label">DATA CONTROLS</span>
+                    <h2>Filter Analytics</h2>
+                    <p>Choose the parameters you want to analyze.</p>
+                </div>
+
+                <div class="filter-icon">
+                    ⚙
+                </div>
+
+            </div>
+
+
+            <div class="filters-grid">
+
+                <!-- Date Filter -->
+                <div class="filter-group">
+
+                    <label for="dateFilter">
+                        Date Range
+                    </label>
+
+                    <div class="select-wrapper">
+
+                        <span class="select-icon">◷</span>
+
+                        <select id="dateFilter">
+
+                            <option value="7">
+                                Last 7 Days
+                            </option>
+
+                            <option value="30">
+                                Last 30 Days
+                            </option>
+
+                            <option value="90">
+                                Last 90 Days
+                            </option>
+
+                            <option value="365">
+                                Last Year
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Category Filter -->
+                <div class="filter-group">
+
+                    <label for="categoryFilter">
+                        Category
+                    </label>
+
+                    <div class="select-wrapper">
+
+                        <span class="select-icon">◈</span>
+
+                        <select id="categoryFilter">
+
+                            <option value="all">
+                                All Categories
+                            </option>
+
+                            <option value="sales">
+                                Sales
+                            </option>
+
+                            <option value="marketing">
+                                Marketing
+                            </option>
+
+                            <option value="finance">
+                                Finance
+                            </option>
+
+                            <option value="product">
+                                Product
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Region Filter -->
+                <div class="filter-group">
+
+                    <label for="regionFilter">
+                        Region
+                    </label>
+
+                    <div class="select-wrapper">
+
+                        <span class="select-icon">◎</span>
+
+                        <select id="regionFilter">
+
+                            <option value="all">
+                                All Regions
+                            </option>
+
+                            <option value="india">
+                                India
+                            </option>
+
+                            <option value="usa">
+                                United States
+                            </option>
+
+                            <option value="uk">
+                                United Kingdom
+                            </option>
+
+                            <option value="asia">
+                                Asia Pacific
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Apply Button -->
+                <button
+                    class="apply-btn"
+                    id="applyFilter">
+
+                    <span>Apply Filters</span>
+                    <span class="arrow">→</span>
+
+                </button>
+
+            </div>
+
+
+            <!-- Reset -->
+            <div class="filter-footer">
+
+                <button
+                    class="reset-btn"
+                    id="resetFilter">
+
+                    ↻ Reset all filters
+
+                </button>
+
+                <span class="filter-hint">
+                    Filters update your analytics view
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Active Filter Result -->
+        <section class="result-card">
+
+            <div class="result-header">
+
+                <div>
+
+                    <span class="small-label">
+                        CURRENT VIEW
+                    </span>
+
+                    <h2>Analytics Overview</h2>
+
+                </div>
+
+                <div class="active-badge">
+                    ● Active
+                </div>
+
+            </div>
+
+
+            <!-- Result Message -->
+            <div class="result-message">
+
+                <div class="result-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h3>Filters Applied</h3>
+
+                    <p id="filterResult">
+                        Showing data for all categories and all regions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Analytics Preview Cards -->
+            <div class="preview-grid">
+
+                <div class="preview-card">
+
+                    <div class="preview-top">
+                        <span>Revenue</span>
+                        <span class="card-icon">₹</span>
+                    </div>
+
+                    <h3>₹8,52,400</h3>
+
+                    <p class="positive">
+                        ↑ 18.5% <span>vs last period</span>
+                    </p>
+
+                </div>
+
+
+                <div class="preview-card">
+
+                    <div class="preview-top">
+                        <span>Users</span>
+                        <span class="card-icon">♙</span>
+                    </div>
+
+                    <h3>25,430</h3>
+
+                    <p class="positive">
+                        ↑ 12.4% <span>vs last period</span>
+                    </p>
+
+                </div>
+
+
+                <div class="preview-card">
+
+                    <div class="preview-top">
+                        <span>Orders</span>
+                        <span class="card-icon">▣</span>
+                    </div>
+
+                    <h3>3,245</h3>
+
+                    <p class="positive">
+                        ↑ 9.8% <span>vs last period</span>
+                    </p>
+
+                </div>
+
+
+                <div class="preview-card">
+
+                    <div class="preview-top">
+                        <span>Conversion</span>
+                        <span class="card-icon">↗</span>
+                    </div>
+
+                    <h3>7.8%</h3>
+
+                    <p class="positive">
+                        ↑ 2.1% <span>vs last period</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <span>
+                Analytics & Data Visualization
+            </span>
+
+            <span>
+                Built with HTML • CSS • JavaScript
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

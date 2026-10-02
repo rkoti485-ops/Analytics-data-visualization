@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customizable Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="dashboard">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="header-left">
+
+                <div class="logo">✦</div>
+
+                <div>
+                    <span class="small-label">ANALYTICS WORKSPACE</span>
+                    <h1>Customizable Dashboard</h1>
+                    <p>Arrange your analytics the way you want.</p>
+                </div>
+
+            </div>
+
+            <div class="header-actions">
+
+                <button id="resetDashboard" class="secondary-btn">
+                    ↻ Reset
+                </button>
+
+                <button id="saveDashboard" class="primary-btn">
+                    ✓ Save Layout
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- Dashboard Controls -->
+        <section class="control-panel">
+
+            <div>
+                <span class="small-label">DASHBOARD CONTROLS</span>
+
+                <h2>Customize your view</h2>
+
+                <p>
+                    Show or hide analytics cards and arrange your workspace.
+                </p>
+            </div>
+
+            <div class="view-status">
+
+                <span class="live-dot"></span>
+
+                <span id="layoutStatus">
+                    Editing
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Widget Controls -->
+        <section class="widget-controls">
+
+            <div class="control-title">
+
+                <h3>Dashboard Widgets</h3>
+
+                <span>
+                    Toggle widgets
+                </span>
+
+            </div>
+
+
+            <div class="toggle-list">
+
+                <label class="toggle-item">
+
+                    <span>
+                        Revenue
+                    </span>
+
+                    <input
+                        type="checkbox"
+                        class="widget-toggle"
+                        data-widget="revenue"
+                        checked
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="toggle-item">
+
+                    <span>
+                        Users
+                    </span>
+
+                    <input
+                        type="checkbox"
+                        class="widget-toggle"
+                        data-widget="users"
+                        checked
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="toggle-item">
+
+                    <span>
+                        Orders
+                    </span>
+
+                    <input
+                        type="checkbox"
+                        class="widget-toggle"
+                        data-widget="orders"
+                        checked
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+
+                <label class="toggle-item">
+
+                    <span>
+                        Conversion
+                    </span>
+
+                    <input
+                        type="checkbox"
+                        class="widget-toggle"
+                        data-widget="conversion"
+                        checked
+                    >
+
+                    <span class="toggle-slider"></span>
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- Analytics Grid -->
+        <section class="analytics-grid">
+
+
+            <!-- Revenue -->
+            <article
+                class="analytics-card"
+                data-card="revenue"
+            >
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            REVENUE
+                        </span>
+
+                        <h3>₹8,52,400</h3>
+
+                    </div>
+
+                    <div class="card-icon">
+                        ₹
+                    </div>
+
+                </div>
+
+                <p class="growth">
+                    ↑ 18.5%
+                    <span>vs last month</span>
+                </p>
+
+                <div class="mini-chart revenue-chart">
+
+                    <span style="height: 35%"></span>
+                    <span style="height: 50%"></span>
+                    <span style="height: 42%"></span>
+                    <span style="height: 65%"></span>
+                    <span style="height: 58%"></span>
+                    <span style="height: 80%"></span>
+                    <span style="height: 95%"></span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Users -->
+            <article
+                class="analytics-card"
+                data-card="users"
+            >
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            ACTIVE USERS
+                        </span>
+
+                        <h3>25,430</h3>
+
+                    </div>
+
+                    <div class="card-icon">
+                        ♙
+                    </div>
+
+                </div>
+
+                <p class="growth">
+                    ↑ 12.4%
+                    <span>vs last month</span>
+                </p>
+
+                <div class="progress">
+
+                    <div
+                        class="progress-value"
+                        style="width: 78%"
+                    ></div>
+
+                </div>
+
+                <small>
+                    78% of monthly target
+                </small>
+
+            </article>
+
+
+            <!-- Orders -->
+            <article
+                class="analytics-card"
+                data-card="orders"
+            >
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            ORDERS
+                        </span>
+
+                        <h3>3,245</h3>
+
+                    </div>
+
+                    <div class="card-icon">
+                        ▣
+                    </div>
+
+                </div>
+
+                <p class="growth">
+                    ↑ 9.8%
+                    <span>vs last month</span>
+                </p>
+
+                <div class="order-bars">
+
+                    <span style="height: 45%"></span>
+                    <span style="height: 65%"></span>
+                    <span style="height: 50%"></span>
+                    <span style="height: 80%"></span>
+                    <span style="height: 70%"></span>
+                    <span style="height: 92%"></span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Conversion -->
+            <article
+                class="analytics-card"
+                data-card="conversion"
+            >
+
+                <div class="card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            CONVERSION
+                        </span>
+
+                        <h3>7.8%</h3>
+
+                    </div>
+
+                    <div class="card-icon">
+                        ↗
+                    </div>
+
+                </div>
+
+                <p class="growth">
+                    ↑ 2.1%
+                    <span>vs last month</span>
+                </p>
+
+                <div class="circle-progress">
+
+                    <div class="circle-inner">
+                        78%
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- Customization Tip -->
+        <section class="tip-card">
+
+            <div class="tip-icon">
+                ✦
+            </div>
+
+            <div>
+
+                <h3>Make it yours</h3>
+
+                <p>
+                    Toggle widgets above to create a dashboard
+                    that shows only the analytics you need.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <span>
+                Analytics & Data Visualization
+            </span>
+
+            <span>
+                Built with HTML • CSS • JavaScript
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

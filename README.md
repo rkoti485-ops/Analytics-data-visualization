@@ -34,7 +34,7 @@ Each team member developed assigned UI modules and integrated them into the comm
 |---|---|
 | **Koti** | Analytics Dashboard, KPI Dashboard, Customer Analytics, Product Analytics |
 | **Neha** | Sales Analytics, Marketing Analytics, Financial Analytics |
-| **Anu Sree** | User Analytics, Real-time Analytics, Revenue Charts, Data Visualization Cards |
+| **Anusri** | User Analytics, Real-time Analytics, Revenue Charts, Data Visualization Cards |
 | **Manaswini** | Revenue Analytics, Conversion Funnel, Retention & Cohort Analytics |
 | **Gayathri** | Analytics Filters, Customizable Dashboard, Analytics Reports & Export |
 
